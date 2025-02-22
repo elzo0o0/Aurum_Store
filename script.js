@@ -62,7 +62,7 @@ function showCartModal() {
   let total = 0;
   cart.forEach((item, index) => {
     const li = document.createElement("li");
-    li.textContent = `${item.name} - ₽${item.price}`;
+    li.textContent = `${item.name} - ${item.price}`;
     cartItems.appendChild(li);
     total += parseFloat(item.price.replace("₽", "").replace(",", ""));
   });
